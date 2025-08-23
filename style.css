@@ -39,6 +39,7 @@ footer {
   font-family: "PT Serif", sans-serif;
   font-size: 2rem;
   font-weight: 700;
+  margin: 0.4rem 0;
 }
 
 .nav-container > h2 {
@@ -88,7 +89,7 @@ footer {
 }
 
 .content-container {
-  margin: 1.25rem;
+  margin: 0.75rem;
 }
 
 .grid-container {
