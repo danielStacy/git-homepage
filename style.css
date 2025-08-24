@@ -71,6 +71,8 @@ footer {
   padding: 0.5rem;
   border-radius: 3px;
   border: solid 1px var(--col-white-dark);
+
+  transition: background-color 0.2s ease-out;
 }
 
 .nav-link:hover,
@@ -94,7 +96,6 @@ footer {
 
 .grid-container {
   display: grid;
-  /* Media query at larger screen widths - expands to 2 columns */
   grid-template-columns: 1fr;
   gap: 2rem;
 }
@@ -106,9 +107,15 @@ footer {
   background: radial-gradient(var(--col-white-dark), white);
 }
 
+.grid-item {
+  box-shadow: 0 0 8px transparent;
+  transition: box-shadow 0.3s ease-in;
+}
+
 .grid-item:hover,
-.grid-item:focus {
-  box-shadow: 0 0 5px var(--col-black);
+.grid-item:focus,
+.grid-item:active {
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 
 img {
