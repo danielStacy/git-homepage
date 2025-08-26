@@ -82,7 +82,7 @@ footer {
   outline: none;
 }
 
-.grid-item > h2 {
+.grid-item h2 {
   font-family: "PT Serif", sans-serif;
   margin-top: 0;
   margin-bottom: 1.75rem;
@@ -92,6 +92,27 @@ footer {
 
 .content-container {
   margin: 0.75rem;
+}
+
+.avatar {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.img-container {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.img-container img {
+  margin: 0;
+  width: 100%;
+  border-radius: 8px;
+}
+
+figcaption {
+  font-size: 0.75rem;
+  color: rgb(88, 88, 88);
 }
 
 .grid-container {
@@ -158,6 +179,12 @@ footer p {
     max-width: 1000px;
   }
 
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   /* 
     Do something like this to rearrange
   */
@@ -170,5 +197,15 @@ footer p {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  .content-container {
+    max-width: 1600px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
