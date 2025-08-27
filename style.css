@@ -127,17 +127,29 @@ figcaption {
   padding: 1.5rem;
   background: radial-gradient(var(--col-white-dark), white);
 }
-
+/* shadow animation on hover */
 .grid-item {
-  box-shadow: 0 0 8px transparent;
-  transition: box-shadow 0.3s ease-in;
+  position: relative;
 }
 
-.grid-item:hover,
-.grid-item:focus,
-.grid-item:active {
-  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+.grid-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  box-shadow: 0 0 8px var(--col-black);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
+
+.grid-item:hover::after {
+  opacity: 0.5;
+}
+/* end animation */
 
 footer {
   margin-top: auto;
