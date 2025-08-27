@@ -247,7 +247,7 @@ footer p {
   .small-img, .small-img + figcaption {
     display: block;
     margin: 0 auto;
-    max-width: 320px;
+    max-width: 350px;
   }
 
   /* 
