@@ -90,6 +90,16 @@ footer {
   font-weight: 700;
 }
 
+.row {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.resp-proj-container p 
+, .resp-proj-container li {
+  font-size: 0.8rem;
+}
+
 .content-container {
   margin: 0.75rem;
 }
@@ -110,6 +120,15 @@ footer {
   border-radius: 8px;
 }
 
+.img-portrait {
+  /* height: 100%; */
+  max-height: 300px;
+}
+
+.portrait-container {
+  width: 100%;
+}
+
 figcaption {
   font-size: 0.75rem;
   color: rgb(88, 88, 88);
@@ -126,6 +145,11 @@ figcaption {
   border-radius: 8px;
   padding: 1.5rem;
   background: radial-gradient(var(--col-white-dark), white);
+}
+
+.project-links > li {
+  list-style: none;
+  line-height: 1.35;
 }
 
 footer {
