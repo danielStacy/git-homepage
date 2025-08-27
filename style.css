@@ -121,12 +121,15 @@ footer {
 }
 
 .img-portrait {
-  /* height: 100%; */
   max-height: 300px;
 }
 
 .portrait-container {
   width: 100%;
+}
+
+.portrait-container * {
+  float: right;
 }
 
 figcaption {
