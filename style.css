@@ -194,7 +194,7 @@ footer p {
   border-radius: inherit;
   box-shadow: 0 0 12px var(--col-black);
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .grid-item:hover::after {
