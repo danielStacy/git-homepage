@@ -95,8 +95,8 @@ footer {
   gap: 1.25rem;
 }
 
-.resp-proj-container p 
-, .resp-proj-container li {
+.small-text-container p 
+, .small-text-container li {
   font-size: 0.8rem;
 }
 
@@ -118,6 +118,16 @@ footer {
   margin: 0;
   width: 100%;
   border-radius: 8px;
+}
+
+.small-img, .small-img + figcaption {
+  display: block;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.centered-text {
+  text-align: center;
 }
 
 .img-portrait {
@@ -178,13 +188,13 @@ footer p {
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  box-shadow: 0 0 10px var(--col-black);
+  box-shadow: 0 0 12px var(--col-black);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
 .grid-item:hover::after {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 /* end animation */
 
