@@ -35,14 +35,14 @@ footer {
   gap: 1rem;
 }
 
-.header-container > h1 {
+.header-heading {
   font-family: "PT Serif", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   margin: 0.4rem 0;
 }
 
-.nav-container > h2 {
+.nav-projects-heading {
   font-size: 1.25rem;
   margin: 0;
 }
@@ -82,7 +82,7 @@ footer {
   outline: none;
 }
 
-.grid-item h2 {
+.section-heading {
   font-family: "PT Serif", sans-serif;
   margin-top: 0;
   margin-bottom: 1.75rem;
@@ -104,7 +104,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-.img-container img {
+.big-img {
   margin: 0;
   width: 100%;
   border-radius: 8px;
@@ -127,6 +127,16 @@ figcaption {
   padding: 1.5rem;
   background: radial-gradient(var(--col-white-dark), white);
 }
+
+footer {
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
 /* shadow animation on hover */
 .grid-item {
   position: relative;
@@ -141,28 +151,15 @@ figcaption {
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  box-shadow: 0 0 8px var(--col-black);
+  box-shadow: 0 0 10px var(--col-black);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
 .grid-item:hover::after {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 /* end animation */
-
-footer {
-  margin-top: auto;
-}
-
-footer a {
-  color: var(--col-white-dark);
-}
-
-footer p {
-  margin: 0;
-  font-size: 0.8rem;
-}
 
 @media (min-width: 800px) {
   .nav-container,
