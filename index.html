@@ -62,7 +62,7 @@
             <li>React</li>
             <li>Version control (Git)</li>
             <li>Object oriented design</li>
-            <li>Automated test suites (Jest)</li>
+            <li>Automated test suites (Jest) and documentation</li>
           </ul>
           <p>
             Of course, I'm no master of anything of the above, but those are the
@@ -72,7 +72,7 @@
         <section class="grid-item widescreen-column">
           <figure class="img-container">
             <img
-              class="big-img"
+              class="img-wide-large"
               src="./img/student.jpg"
               alt="student with a laptop" />
             <figcaption>
@@ -101,7 +101,7 @@
           </div>
         </section>
         <section class="grid-item widescreen-split">
-          <div class="text-container small-text-container">
+          <div class="text-container">
             <h2 class="section-heading">Responsive Layout Project</h2>
             <p>
               Short, mobile-first, responsive design activity. Completed in 2-3
@@ -150,7 +150,7 @@
             Different</h2>
           <figure class="img-container">
             <img
-              class="small-img"
+              class="img-small"
               src="./img/rps.png"
               alt="rock paper scissors webpage screenshot" />
             <figcaption>
@@ -193,7 +193,7 @@
           <h2 class="section-heading centered-text">Pokemon Memory Game</h2>
           <figure class="img-container">
             <img
-              class="small-img"
+              class="img-small img-click-expand"
               src="./img/pmg.png"
               alt="pokemon memory game webpage screenshot" />
             <figcaption>
@@ -207,11 +207,18 @@
               which Pokemon have previously been selection, because you can only
               catch each Pokemon once.
             </p>
-            <p>
-              <b>To do</b>: Update fetchPokemon useEffect hook to return early
-              with some initial number of cards, while loading the rest in the
-              background while the game is playable.
-            </p>
+            <h3>To do</h3>
+            <ul>
+              <li>Load of initial number of cards to get the game into a 
+                playable state while the remainder load in the background.
+              </li>
+              <li>
+                Learn and implement propTypes
+              </li>
+              <li>
+                Learn and implement reduces, ie <code>useReducer</code>
+              </li>
+            </ul>
             <h3>Skills Developed</h3>
             <ul>
               <li>React functional components</li>
