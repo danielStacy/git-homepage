@@ -71,7 +71,6 @@ footer {
   padding: 0.5rem;
   border-radius: 3px;
   border: solid 1px var(--col-white-dark);
-
   transition: background-color 0.2s ease-out;
 }
 
@@ -90,70 +89,60 @@ footer {
   font-weight: 700;
 }
 
-.widescreen-split {
-  display: flex;
-  gap: 1.25rem;
-}
-
-.small-text-container p 
-, .small-text-container li {
-  font-size: 0.8rem;
-}
-
 .content-container {
   margin: 0.75rem;
 }
 
+/* image styling */
 .avatar {
   height: 60px;
   border-radius: 50%;
 }
 
-.img-container {
-  margin: 0;
-  margin-bottom: 1rem;
+.img-container-landscape img {
+  width: 100%;
 }
 
-.img-wide-large {
-  border-radius: 8px;
+.img-container {
+  margin: 0;
+  margin-bottom: 1.65rem;
 }
 
 .img-container img,
 .img-container figcaption {
   display: block;
-  width: 80%;
   margin: 0 auto;
 }
 
-.img-container:has(.img-small) {
-  margin-bottom: 1.5rem;
+.img-landscape, 
+.img-container-landscape figcaption {
+  max-width: 450px;
 }
 
-.centered-text {
-  text-align: center;
+.img-portrait, 
+.img-container-portrait figcaption {
+  max-width: 350px;
 }
 
-.img-portrait {
-  max-height: 400px;
-}
-
-.portrait-container {
-  width: 100%;
-}
-
-.portrait-container * {
-  float: right;
+.img-round-border {
+  border-radius: 8px;
 }
 
 figcaption {
   font-size: 0.75rem;
   color: rgb(88, 88, 88);
 }
+/* end image styling */
+
+.centered-text {
+  text-align: center;
+}
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  margin: 1rem 0;
 }
 
 .grid-item {
@@ -194,11 +183,11 @@ footer p {
   border-radius: inherit;
   box-shadow: 0 0 14px var(--col-black);
   opacity: 0;
-  transition: opacity 0.6s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .grid-item:hover::after {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 /* end animation */
 
@@ -229,21 +218,6 @@ footer p {
     max-width: 1100px;
   }
 
-  .widescreen-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .img-container img,
-  .img-container figcaption {
-    width: 100%;
-  }
-
-  .img-portrait {
-    max-height: 350px;
-  }
-
   .img-small, .img-small + figcaption {
     display: block;
     margin: 0 auto;
@@ -262,6 +236,17 @@ footer p {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .img-container-portrait {
+    float: right;
+    margin-left: 1rem;
+  }
+
+  .img-portrait {
+    max-width: 250px;
   }
 }
 
