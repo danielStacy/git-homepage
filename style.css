@@ -36,7 +36,6 @@ footer {
 }
 
 .header-heading {
-  font-family: "PT Serif", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   margin: 0.4rem 0;
@@ -82,7 +81,6 @@ footer {
 }
 
 .section-heading {
-  font-family: "PT Serif", sans-serif;
   margin-top: 0;
   margin-bottom: 1.75rem;
   font-size: 1.4rem;
