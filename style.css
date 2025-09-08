@@ -91,14 +91,16 @@ footer {
   margin: 0.75rem;
 }
 
+.img-landscape,
+.img-portrait {
+  width: 100%;
+}
+
+
 /* image styling */
 .avatar {
   height: 60px;
   border-radius: 50%;
-}
-
-.img-container-landscape img {
-  width: 100%;
 }
 
 .img-container {
@@ -148,6 +150,7 @@ figcaption {
   border-radius: 8px;
   padding: 1.5rem;
   background: radial-gradient(var(--col-white-dark), white);
+  margin: 0 1rem;
 }
 
 .project-links > li {
@@ -204,6 +207,10 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+
+  .grid-item {
+    margin: 0;
   }
 
   .content-container {
